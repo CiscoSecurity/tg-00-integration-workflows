@@ -38,47 +38,47 @@ Submitting a File
 
 .. http:example::
 
-    POST https://panacea.threatgrid.com/api/v2/samples HTTP/1.1
+    POST https://panacea.threatgrid.com/api/v2/samples&api_key=12345abcde HTTP/1.1
 
 Check State of a Sample
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/samples/$ID/state HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/samples/$ID/state&api_key=12345abcde HTTP/1.1
 
 Check State of Multiple Samples (Recommended)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/samples/state HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/samples/state&api_key=12345abcde HTTP/1.1
 
 Download Analysis Elements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/samples/$ID/viedo.webm HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/samples/$ID/viedo.webm&api_key=12345abcde HTTP/1.1
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/samples/$ID/analysis.json HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/samples/$ID/analysis.json&api_key=12345abcde HTTP/1.1
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/samples/$ID/processes.json HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/samples/$ID/processes.json&api_key=12345abcde HTTP/1.1
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/samples/$ID/network.pcap HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/samples/$ID/network.pcap&api_key=12345abcde HTTP/1.1
 
 Download Artifacts
 ^^^^^^^^^^^^^^^^^^
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/artifacts/$SHA256/download HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/artifacts/$SHA256/download&api_key=12345abcde HTTP/1.1
 
 Get Glovebox URI
 ^^^^^^^^^^^^^^^^
@@ -91,13 +91,13 @@ For this endpoint the URI is data.glovebox_url:
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/samples/$ID HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/samples/$ID&api_key=12345abcde HTTP/1.1
 
 For this endpoint the URI is data.items[].glovebox_url
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/samples?id=$ID HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/samples?id=$ID&api_key=12345abcde HTTP/1.1
 
 
 Rate Limit Information
@@ -111,7 +111,7 @@ First:
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v3/session/whoami HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v3/session/whoami&api_key=12345abcde HTTP/1.1
 
 Store the value found at ``data.login`` and use it in the second API call.
 
@@ -119,4 +119,4 @@ Second:
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v3/users/$login/rate-limit HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v3/users/$login/rate-limit&api_key=12345abcde HTTP/1.1

@@ -37,7 +37,7 @@ ID, storing all Sample IDs that have ``state=run``. Do this at a maximum of ever
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/samples?org_only=True&after=last_hour HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/samples?org_only=True&after=last_hour&api_key=12345abcde HTTP/1.1
 
 Check for State Change of the Running Samples
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -48,7 +48,7 @@ that changes to state other than ``succ`` can be logged or discarded.
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/samples/state?ids= HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/samples/state?ids=&api_key=12345abcde HTTP/1.1
 
 Download Analysis Elements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -57,18 +57,18 @@ Once the samples have reached ``state=succ`` the analysis elements can be fetche
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/samples/$ID/viedo.webm HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/samples/$ID/viedo.webm&api_key=12345abcde HTTP/1.1
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/samples/$ID/analysis.json HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/samples/$ID/analysis.json&api_key=12345abcde HTTP/1.1
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/samples/$ID/processes.json HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/samples/$ID/processes.json&api_key=12345abcde HTTP/1.1
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/samples/$ID/network.pcap HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/samples/$ID/network.pcap&api_key=12345abcde HTTP/1.1
 
 

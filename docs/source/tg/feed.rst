@@ -31,14 +31,14 @@ Example Fetch of One Hourly Feed
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v3/feeds/banking-dns.json HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v3/feeds/banking-dns.json&api_key=12345abcde HTTP/1.1
 
 Example Fetch of One Daily Feed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v3/feeds/banking-dns_2016-07-14.json HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v3/feeds/banking-dns_2016-07-14.json&api_key=12345abcde HTTP/1.1
 
 
 

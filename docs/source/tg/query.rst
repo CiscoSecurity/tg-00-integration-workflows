@@ -34,52 +34,52 @@ user's samples respectively.
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/search/submissions?state=succ&q=$IOC HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/search/submissions?state=succ&q=$IOC&api_key=12345abcde HTTP/1.1
 
 Download Analysis Elements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/samples/$ID/viedo.webm HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/samples/$ID/viedo.webm&api_key=12345abcde HTTP/1.1
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/samples/$ID/analysis.json HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/samples/$ID/analysis.json&api_key=12345abcde HTTP/1.1
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/samples/$ID/processes.json HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/samples/$ID/processes.json&api_key=12345abcde HTTP/1.1
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/samples/$ID/network.pcap HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/samples/$ID/network.pcap&api_key=12345abcde HTTP/1.1
 
 Access Specific Elements of analysis.json
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/samples/$ID/analysis/iocs HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/samples/$ID/analysis/iocs&api_key=12345abcde HTTP/1.1
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/samples/$ID/analysis/network_streams HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/samples/$ID/analysis/network_streams&api_key=12345abcde HTTP/1.1
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/samples/$ID/analysis/processes HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/samples/$ID/analysis/processes&api_key=12345abcde HTTP/1.1
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/samples/$ID/analysis/annotations HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/samples/$ID/analysis/annotations&api_key=12345abcde HTTP/1.1
 
 Download Artifacts
 ^^^^^^^^^^^^^^^^^^
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/artifacts/$SHA256/download HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/artifacts/$SHA256/download&api_key=12345abcde HTTP/1.1
 
 Entity Searches
 ^^^^^^^^^^^^^^^
@@ -92,56 +92,56 @@ Search for Artifacts Based on Single-term Searches
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/search/artifacts HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/search/artifacts&api_key=12345abcde HTTP/1.1
 
 Search for Domains Based on Single-term Searches
 """"""""""""""""""""""""""""""""""""""""""""""""
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/search/domains HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/search/domains&api_key=12345abcde HTTP/1.1
 
 Search for IPs Based on Single-term Searches
 """"""""""""""""""""""""""""""""""""""""""""
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/search/ips HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/search/ips&api_key=12345abcde HTTP/1.1
 
 Search for Paths Based on Single-term Searches
 """"""""""""""""""""""""""""""""""""""""""""""
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/search/paths HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/search/paths&api_key=12345abcde HTTP/1.1
 
 Search for Registry Keys Based on Single-term Searches
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/search/registry_keys HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/search/registry_keys&api_key=12345abcde HTTP/1.1
 
 Search for Samples Based on Single-term Searches
 """"""""""""""""""""""""""""""""""""""""""""""""
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/search/samples HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/search/samples&api_key=12345abcde HTTP/1.1
 
 Search for URLs Based on Single-term Searches
 """""""""""""""""""""""""""""""""""""""""""""
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/search/urls HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/search/urls&api_key=12345abcde HTTP/1.1
 
 Search for Submission Records About Submitted Samples
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. http:example::
 
-    GET https://panacea.threatgrid.com/api/v2/search/submissions HTTP/1.1
+    GET https://panacea.threatgrid.com/api/v2/search/submissions&api_key=12345abcde HTTP/1.1
 
 Advanced Search
 ^^^^^^^^^^^^^^^
