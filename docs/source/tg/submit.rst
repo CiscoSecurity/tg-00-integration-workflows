@@ -16,20 +16,16 @@ There are seven minimum required features for an integration with Threat Grid:
 8. Allow users to select VM
 
     - Use the `/api/v3/configuration/vms` to get a list of options to present to the user
-
 9. Allow user to select playbook
 
     - Use the /api/v3/configuration/playbooks to get a list of options to present to the user
-
 10. Allow user to select network simulation
 
     - Use the `/api/v3/configuration/network-exits` to get a list of options to present to the user
     - Use the network exits where the `simulation` is not `"none"`
-
 11. Allow user to select network exit
 
     -  Use the `/api/v3/configuration/network-exits` to get a list of options to present to the user
-
 12. Allow user to enter a password for password protected documents and archive submissions
 13. Allow users to enable classification using the `classify` parameter
 
@@ -51,13 +47,11 @@ Automated Submission Requirements
 1. Limit submissions to appropriate supported file types
 
     - Even though html and js files are supported, it often doesn't make sense for a system to automatically submit every html or js file it sees
-
 2. Check if a file has been submitted in the organization within a configurable time window no less than 15 minutes and do not resubmit if it has
 
 Automated Submission Requirements for Archives
 """"""""""""""""""""""""""""""""""""""""""""""
 1. Extract the contents of the archive and submit the appropriate supported file types individually
-
 
 Example API Endpoints
 ---------------------
