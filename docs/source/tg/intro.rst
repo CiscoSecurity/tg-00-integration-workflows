@@ -5,8 +5,14 @@ Getting Started
 
 A list of Threat Grid scripts can be found `here <https://github.com/CiscoSecurity/tg-01-basics>`_.
 
-Threat Grid has four primary uses: submitting samples for analysis, using the data, curated feeds, and organization sample
-data. Most, if not all, tasks that can be completed within the Threat Grid UI can be performed using APIs.
+Threat Grid has four primary uses:
+
+- Submitting samples for analysis
+- Using the data
+- Curated feeds
+- Organization sample data.
+
+Most, if not all, tasks that can be completed within the Threat Grid UI can be performed using APIs.
 
 Receiving an API Key
 --------------------

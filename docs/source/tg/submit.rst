@@ -7,6 +7,12 @@ Requirements
 There are seven minimum required features for an integration with Threat Grid:
 
 1. Ability to enter an API key
+
+.. NOTE::
+
+    To receive an API key go to the Threat Grid dashboard and click your username in the top right corner.
+    Then click `My Account` and then `Generate API Key`.
+
 2. Ability to change the URI to allow for appliance operability
 3. Link back to the sample in the Threat Grid portal
 4. Display the Threat Score for the sample
@@ -66,6 +72,21 @@ Submitting a File
 .. http:example::
 
     POST https://panacea.threatgrid.com/api/v2/samples&api_key=12345abcde HTTP/1.1
+
+.. http:example::
+
+    POST /api/v2/samples?api_key=12345abcde HTTP/1.1
+    Content-Type: application/x-www-form-urlencoded
+    Host: panacea.threatgrid.com
+    Content-Disposition: form-data; name="sample"; filename="test_file.txt"
+    Content-Disposition: form-data; name="network_exit"
+    Content-Disposition: form-data; name="private"
+    Content-Disposition: form-data; name="vm"
+
+.. code-block:: bash
+
+    curl -XPOST -F "sample=@readme.doc" -F api_key=MY_API_KEY
+    https://panacea.threatgrid.com/api/v2/samples
 
 Check State of a Sample
 ^^^^^^^^^^^^^^^^^^^^^^^
