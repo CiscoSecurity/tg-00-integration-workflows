@@ -35,9 +35,9 @@ master_doc = 'index'
 extensions = [
     'recommonmark',
     "sphinx_rtd_theme",
-    'sphinxcontrib.yt',
     'sphinxcontrib.httpdomain',
-    'sphinxcontrib.httpexample'
+    'sphinxcontrib.httpexample',
+    'sphinx.ext.autosectionlabel'
 ]
 
 # Add any paths that contain templates here, relative to this directory.

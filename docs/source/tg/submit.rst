@@ -13,7 +13,10 @@ There are seven minimum required features for an integration with Threat Grid:
     To receive an API key go to the Threat Grid dashboard and click your username in the top right corner.
     Then click `My Account` and then `Generate API Key`.
 
-2. Ability to change the URI to allow for appliance operability
+
+2. Ability to change the URI to allow for `appliance operability. <https://www.cisco.com/c/en/us/support/security/amp-threat-grid-appliances/products-installation-guides-list.html>`_
+
+
 3. Link back to the sample in the Threat Grid portal
 4. Display the Threat Score for the sample
 5. Render at a minimum the Behavioral Indicator count from the sample
@@ -39,7 +42,7 @@ There are seven minimum required features for an integration with Threat Grid:
 
     There are seven additional features that make for a more thorough integration with an improved workflow and user experience:
 
-    1. Glovebox Interaction
+    1. :ref:`Glovebox Interaction`
     2. Render / Parse full anlysis.json results
     3. Provide easily saved / copied list of IPs, Domains, Hashes, etc...
     4. Download artifacts,video,pcap
@@ -127,6 +130,8 @@ Download Artifacts
 .. http:example::
 
     GET https://panacea.threatgrid.com/api/v2/artifacts/$SHA256/download&api_key=12345abcde HTTP/1.1
+
+.. _Glovebox Interaction:
 
 Get Glovebox URI
 ^^^^^^^^^^^^^^^^
