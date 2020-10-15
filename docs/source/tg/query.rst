@@ -6,7 +6,7 @@ are indexed providing the ability to enrich and add context to IOCs from other s
 
 Requirements
 ------------
-There are two minimum required features for an integration with Threat Grid:
+There are two minimum required features for an integration to query Threat Grid:
 
 1. Ability to enter an API key
 2. Ability to change the URI to allow for appliance operability
@@ -25,12 +25,24 @@ Example API Endpoints
 
     To view the complete and up to date Threat Grid documentation and release notes head to the help page in the Threat Grid portal `here <https://panacea.threatgrid.com/mask/doc>`_.
 
+.. _Querying for an IOC:
+
 Querying for an IOC
 ^^^^^^^^^^^^^^^^^^^
 
 Initial IOC searches should always be done using the Submission Search API. The scope of a search can be limited with
 various parameters. ``org_only=True`` or ``user_only=True`` will limit the searches to just their organization’s or
-user's samples respectively.
+user's samples respectively. The following types can be queried.
+
+1. Checksum
+2. Path
+3. URL
+4. Registry Key
+5. Domain
+6. IP
+7. IOC
+8. Tag
+9. Sample
 
 .. http:example::
 

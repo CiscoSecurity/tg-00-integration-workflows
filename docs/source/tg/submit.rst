@@ -2,6 +2,11 @@ Submitting Samples
 ==================
 Samples (that are supported file types) can be submitted to Threat Grid either automatically or manually for analysis.
 
+.. NOTE::
+
+    It is best practice to query a sha256 hash of your submission prior to submitting a sample to discover if it's
+    already been analyzed. :ref:`Querying for an IOC`. This will save time and stop the reanalyzing of the same file multiple times.
+
 Requirements
 ------------
 There are seven minimum required features for an integration with Threat Grid:
@@ -25,16 +30,44 @@ There are seven minimum required features for an integration with Threat Grid:
 8. Allow users to select VM
 
     - Use the `/api/v3/configuration/vms` to get a list of options to present to the user
+
+.. image:: _static/vm.png
+    :target: _static/vm.html
+    :width: 445px
+    :align: center
+    :height: 300px
+
 9. Allow user to select playbook
 
     - Use the /api/v3/configuration/playbooks to get a list of options to present to the user
+
+.. image:: _static/playbook.png
+    :target: _static/playbook.html
+    :width: 500px
+    :align: center
+    :height: 300px
+
 10. Allow user to select network simulation
 
     - Use the `/api/v3/configuration/network-exits` to get a list of options to present to the user
-    - Use the network exits where the `simulation` is not `"none"`
+    - Use the network exits where the `simulation` is not `"none"` (eg. As Needed or All Simulated)
+
+.. image:: _static/network.png
+    :target: _static/network.html
+    :width: 500px
+    :align: center
+    :height: 100px
+
 11. Allow user to select network exit
 
     -  Use the `/api/v3/configuration/network-exits` to get a list of options to present to the user
+
+.. image:: _static/exit.png
+    :target: _static/exit.html
+    :width: 500px
+    :align: center
+    :height: 300px
+
 12. Allow user to enter a password for password protected documents and archive submissions
 13. Allow users to enable classification using the `classify` parameter
 
@@ -45,10 +78,10 @@ There are seven minimum required features for an integration with Threat Grid:
     1. :ref:`Glovebox Interaction`
     2. Render / Parse full anlysis.json results
     3. Provide easily saved / copied list of IPs, Domains, Hashes, etc...
-    4. Download artifacts,video,pcap
-    5. Pull and display Rate-Limit informaiton
+    4. :ref:`Download artifacts, video, pcap`
+    5. :ref:`Pull and display Rate-Limit information`
     6. Allow users to limit the number of daily submissions either by hard limit or % of rate limit
-    7. Allow users to choose which filetypes are submitted
+    7. Allow users to choose which file types are submitted
 
 Automated Submission Requirements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -62,8 +95,8 @@ Automated Submission Requirements for Archives
 """"""""""""""""""""""""""""""""""""""""""""""
 1. Extract the contents of the archive and submit the appropriate supported file types individually
 
-Example API Endpoints
----------------------
+Common API Endpoint Examples
+----------------------------
 
 .. NOTE::
 
@@ -124,6 +157,8 @@ Download Analysis Elements
 
     GET https://panacea.threatgrid.com/api/v2/samples/$ID/network.pcap&api_key=12345abcde HTTP/1.1
 
+.. _Download artifacts, video, pcap:
+
 Download Artifacts
 ^^^^^^^^^^^^^^^^^^
 
@@ -152,6 +187,7 @@ For this endpoint the URI is data.items[].glovebox_url
 
     GET https://panacea.threatgrid.com/api/v2/samples?id=$ID&api_key=12345abcde HTTP/1.1
 
+.. _Pull and display Rate-Limit information:
 
 Rate Limit Information
 ----------------------
@@ -173,3 +209,10 @@ Second:
 .. http:example::
 
     GET https://panacea.threatgrid.com/api/v3/users/$login/rate-limit&api_key=12345abcde HTTP/1.1
+
+.. image:: _static/limit.png
+    :target: _static/limit.html
+    :width: 600px
+    :align: center
+    :height: 600px
+
