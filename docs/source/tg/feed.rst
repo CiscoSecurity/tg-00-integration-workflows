@@ -2,11 +2,11 @@ Curated Feeds
 =============
 
 Threat Grid curates multiple feeds hourly and daily. These feeds are based on the files Threat Grid has analyzed in that
-time frame. The feeds are only generated in the Threat Grid cloud and are no available via the Threat Grid appliance.
+time frame. The feeds are only generated in the Threat Grid cloud and are available via the Threat Grid appliance.
 
 Requirements
 ------------
-There are two minimum required features for interacting with the feeds API endpoint in Threat Grid:
+There are three minimum required features for interacting with the feeds API endpoint in Threat Grid:
 
 1. Ability to enter an API key
 2. Ability to choose which feeds to pull

@@ -338,34 +338,6 @@ Example Response:
         }
     }
 
-Search for Paths Based on Single-term Searches
-""""""""""""""""""""""""""""""""""""""""""""""
-
-.. http:example::
-
-    GET https://panacea.threatgrid.com/api/v2/search/paths&api_key=12345abcde HTTP/1.1
-
-Search for Registry Keys Based on Single-term Searches
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-.. http:example::
-
-    GET https://panacea.threatgrid.com/api/v2/search/registry_keys&api_key=12345abcde HTTP/1.1
-
-Search for Samples Based on Single-term Searches
-""""""""""""""""""""""""""""""""""""""""""""""""
-
-.. http:example::
-
-    GET https://panacea.threatgrid.com/api/v2/search/samples&api_key=12345abcde HTTP/1.1
-
-Search for URLs Based on Single-term Searches
-"""""""""""""""""""""""""""""""""""""""""""""
-
-.. http:example::
-
-    GET https://panacea.threatgrid.com/api/v2/search/urls&api_key=12345abcde HTTP/1.1
-
 Search for Submission Records About Submitted Samples
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

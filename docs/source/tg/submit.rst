@@ -143,7 +143,7 @@ Example response:
         "vm": "win10",
         "submission_id": 876379151,
         "state": "wait",
-        "login": "mauger",
+        "login": "jwick",
         "sha1": "3cebd815a45a3014498cfaa6c224071736f22f61",
         "filename": "safe.pdf",
         "status": "pending",
@@ -156,6 +156,15 @@ Example response:
 
 Check State of a Sample
 ^^^^^^^^^^^^^^^^^^^^^^^
+
+There are 6 possible results for a sample state:
+
+1. wait
+2. prep
+3. run
+4. proc
+5. succ
+6. fail
 
 .. http:example::
 
@@ -175,6 +184,15 @@ Example response:
 
 Check State of Multiple Samples (Recommended)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+There are 6 possible results for a sample state:
+
+1. wait
+2. prep
+3. run
+4. proc
+5. succ
+6. fail
 
 .. http:example::
 
@@ -255,13 +273,13 @@ from within your UI.
 
     The glovebox_url is only available when the sample state is "run"
 
-For this endpoint the URI is data.glovebox_url:
+For this endpoint the URI is ``.data.glovebox_url``:
 
 .. http:example::
 
     GET https://panacea.threatgrid.com/api/v2/samples/$ID&api_key=12345abcde HTTP/1.1
 
-For this endpoint the URI is data.items[].glovebox_url
+For this endpoint the URI is ``.data.items[].glovebox_url``:
 
 .. http:example::
 
@@ -328,7 +346,9 @@ Store the value found at ``data.login`` and use it in the second API call.
 
 Second:
 
-Query the Rate Limit using `/api/v3/users/:login/rate-limit <https://panacea.threatgrid.com/mask/api-doc/api/v3/users/:login/rate-limit>`_. This will return the rate limit for the user and organization.
+Query the Rate Limit using `/api/v3/users/:login/rate-limit <https://panacea.threatgrid.com/mask/api-doc/api/v3/users/:login/rate-limit>`_.
+This will return the rate limit for the user and organization. If the value of ``.data.user.submissions-available`` is ``NULL``
+it means there is no limit set for the user and the value of organization limit ``.data.organization.submissions-available`` will apply.
 
 .. http:example::
 
@@ -338,22 +358,24 @@ Query the Rate Limit using `/api/v3/users/:login/rate-limit <https://panacea.thr
 
     {
       "api_version": 3,
-      "id": 5003240,
+      "id": 9058684,
       "data": {
-        "organization": {
-          "submissions-available": "NULL",
-          "submission-wait": 0,
-          "submissions-rate-limit": []
-        },
         "user": {
-          "submissions-available": 2,
-          "submission-wait": 0,
-          "submissions-rate-limit": [
+          "submission-rate-limit": [],
+          "submission-wait-seconds": 0,
+          "submissions-available": null
+        },
+        "organization": {
+          "submission-rate-limit": [
             {
-              "minutes": 10,
-              "samples": 2
+              "samples": 1000,
+              "minutes": 1440,
+              "submissions-available": 1000,
+              "submission-wait-seconds": 0
             }
-          ]
+          ],
+          "submission-wait-seconds": 0,
+          "submissions-available": 1000
         }
       }
     }
