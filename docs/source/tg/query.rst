@@ -338,13 +338,6 @@ Example Response:
         }
     }
 
-Search for Submission Records About Submitted Samples
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. http:example::
-
-    GET https://panacea.threatgrid.com/api/v2/search/submissions&api_key=12345abcde HTTP/1.1
-
 Advanced Search
 ^^^^^^^^^^^^^^^
 

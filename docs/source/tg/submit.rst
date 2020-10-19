@@ -41,7 +41,7 @@ There are seven minimum required features for an integration with Threat Grid:
 
 9. Allow user to select playbook
 
-    - Use the /api/v3/configuration/playbooks to get a list of options to present to the user
+    - Use the `/api/v3/configuration/playbooks <https://panacea.threatgrid.com/mask/api-doc/api/v3/configuration/playbooks>`_ to get a list of options to present to the user
 
 .. image:: _static/playbook.png
     :target: _static/playbook.html
@@ -51,7 +51,7 @@ There are seven minimum required features for an integration with Threat Grid:
 
 10. Allow user to select network simulation
 
-    - Use the `/api/v3/configuration/network-exits` to get a list of options to present to the user
+    - Use the `/api/v3/configuration/network-exits <https://panacea.threatgrid.com/mask/api-doc/api/v3/configuration/network-exits>`_ to get a list of options to present to the user
     - Use the network exits where the `simulation` is not `"none"` (eg. As Needed or All Simulated)
 
 .. image:: _static/network.png
@@ -62,7 +62,7 @@ There are seven minimum required features for an integration with Threat Grid:
 
 11. Allow user to select network exit
 
-    -  Use the `/api/v3/configuration/network-exits` to get a list of options to present to the user
+    -  Use the `/api/v3/configuration/network-exits <https://panacea.threatgrid.com/mask/api-doc/api/v3/configuration/network-exits>`_ to get a list of options to present to the user
 
 .. image:: _static/exit.png
     :target: _static/exit.html
