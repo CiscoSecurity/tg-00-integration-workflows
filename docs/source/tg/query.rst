@@ -1,3 +1,4 @@
+.. _Querying Threat Grid:
 Querying Threat Grid
 =====================
 

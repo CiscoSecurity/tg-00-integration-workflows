@@ -3,14 +3,13 @@ Getting Started
 
 `Cisco Threat Grid API Docs <https://panacea.threatgrid.com/mask/doc/mask/api-getting-started>`_
 
-A list of Threat Grid scripts can be found `here <https://github.com/CiscoSecurity/tg-01-basics>`_.
+A list of basic Threat Grid scripts can be found `here <https://github.com/CiscoSecurity/tg-01-basics>`_.
 
-Threat Grid has four primary uses:
+Threat Grid has three primary uses:
 
-    1. Submitting samples for analysis
-    2. Using the data
-    3. Curated feeds
-    4. Organization sample data.
+    1. :ref:`Submitting Samples`
+    2. :ref:`Querying Threat Grid`
+    3. :ref:`Curated Feeds`
 
 Most tasks that can be completed within the Threat Grid UI can be performed using APIs.
 

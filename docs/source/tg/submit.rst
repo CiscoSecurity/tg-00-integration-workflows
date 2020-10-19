@@ -1,3 +1,4 @@
+.. _Submitting Samples:
 Submitting Samples
 ==================
 Samples (that are supported file types) can be submitted to Threat Grid either automatically or manually for analysis.

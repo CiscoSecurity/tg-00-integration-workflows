@@ -1,3 +1,4 @@
+.. _Curated Feeds:
 Curated Feeds
 =============
 
