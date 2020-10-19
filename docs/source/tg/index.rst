@@ -6,4 +6,3 @@
    Submitting Samples <submit>
    Querying Threat Grid <query>
    Curated Feeds <feed>
-   Organization Sample Data <sample>
