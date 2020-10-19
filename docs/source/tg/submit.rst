@@ -6,7 +6,7 @@ Samples (that are supported file types) can be submitted to Threat Grid either a
 .. NOTE::
 
     It is best practice to query a sha256 hash of your submission prior to submitting a sample to discover if it's
-    already been analyzed. :ref:`Querying for an IOC`. This will save time and stop the reanalyzing of the same file multiple times.
+    already been analyzed. :ref:`Querying for an Observable`. This will save time and stop the reanalyzing of the same file multiple times.
 
 Requirements
 ------------

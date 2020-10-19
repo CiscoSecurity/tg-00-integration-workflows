@@ -2,8 +2,8 @@
 Querying Threat Grid
 =====================
 
-All of the IOCs (IPs, Domains, Mutexes, Hashes, File Paths, Registry Keys, etc...) Threat Grid generates from analysis
-are indexed providing the ability to enrich and add context to IOCs from other systems.
+All of the Observables (IPs, Domains, Mutexes, Hashes, File Paths, Registry Keys, etc...) Threat Grid generates from analysis
+are indexed providing the ability to enrich and add context to Observables from other systems.
 
 Requirements
 ------------
@@ -29,12 +29,12 @@ Example API Endpoints
 
     To view the complete and up to date Threat Grid documentation and release notes head to the help page in the Threat Grid portal `here <https://panacea.threatgrid.com/mask/doc>`_.
 
-.. _Querying for an IOC:
+.. _Querying for an Observable or Entity:
 
-Querying for an IOC
-^^^^^^^^^^^^^^^^^^^
+Querying for an Observable or Entity
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Initial IOC searches should always be done using the Submission Search API `/api/v2/search/submissions <https://panacea.threatgrid.com/mask/api-doc/api/v2/search/submissions>`_. The scope of a search can be limited with
+Initial searches should always be done using the Submission Search API `/api/v2/search/submissions <https://panacea.threatgrid.com/mask/api-doc/api/v2/search/submissions>`_. The scope of a search can be limited with
 various parameters. ``org_only=True`` or ``user_only=True`` will limit the searches to just their organization’s or
 user's samples respectively. Examples of entities that can be queried for include:
 
@@ -44,7 +44,7 @@ user's samples respectively. Examples of entities that can be queried for includ
 4. Registry Key
 5. Domain
 6. IP
-7. IOC
+7. Behavioral Indicator
 8. Tag
 9. Sample
 
